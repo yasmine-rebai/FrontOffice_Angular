@@ -1,41 +1,5 @@
-# Projet Angular-Spring-Boot 
-## Table of contents
-* [General info](#general-info)
-* [Was made by :](#Made-by)
-* [Technologies](#technologies)
-* [Captures](#captures)
-
-## General info
-This project is an e-commerce website.
-
-## Made-by
-this project was made by:
-* Yosra Mekaoui
- 
-	
-## Technologies
-Project is created with:
-* Spring Boot
-* Angular
-
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-
-## Important:
-Run ' ng add @angular/material@12.2.13  '
-
-## Capture video :
-
-https://user-images.githubusercontent.com/61566287/208189428-5a475c3a-37ee-42aa-9081-dd465d395ab7.mp4
-
-
-
-
+![fklelPNG](https://user-images.githubusercontent.com/92315476/232184625-2b9f83c8-f2c5-4b42-9209-7f9aaf501e16.PNG)
+![hjjhh](https://user-images.githubusercontent.com/92315476/232184626-e81b7c53-4005-4cc7-9ae1-f4885a4be280.PNG)
 
 
 
