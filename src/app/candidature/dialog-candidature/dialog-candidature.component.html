@@ -40,7 +40,8 @@
 
     <mat-form-field appearance="outline">
         <mat-label>email</mat-label>
-        <input   formControlName="email"   matInput placeholder="email" />
+        <input   formControlName="email"   matInput placeholder="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+       
 
     </mat-form-field>
 

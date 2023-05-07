@@ -5,6 +5,8 @@ import { DialogCandidatureComponent } from '../dialog-candidature/dialog-candida
 import { Component, OnInit,ViewChild } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ServiceCandidatureService } from 'src/app/service-candidature.service';
+import { Observable } from 'rxjs';
+import * as FileSaver from 'file-saver';
 @Component({
   selector: 'app-list-candidature',
   templateUrl: './list-candidature.component.html',
@@ -89,7 +91,20 @@ deleteCandidature(id: number){
     this.getAllCandidatures()
 
 
-})
+})}
+exportExperienceExcel(){
+  
+    this.candidatureService.getCandidature().subscribe((data) => {
+      const blob = new Blob([data], { type: 'application/excel' });
+      FileSaver.saveAs(blob, 'experiences.excel');
+    });
+  }
+  exportExperience(){
+    this.candidatureService.getCandidature().subscribe((data) => {
+      const blob = new Blob([data], { type: 'application/pdf' });
+      FileSaver.saveAs(blob, 'experiences.pdf');
+    });
+  }
 }
 
 
@@ -98,4 +113,8 @@ deleteCandidature(id: number){
 
 
 
-}
+
+
+
+
+

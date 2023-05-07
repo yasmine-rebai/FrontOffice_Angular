@@ -32,6 +32,7 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
+              
             ],
             "scripts": []
           },
@@ -102,6 +103,37 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "multi-select": {
+      "projectType": "library",
+      "root": "projects/multi-select",
+      "sourceRoot": "projects/multi-select/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/multi-select/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/multi-select/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/multi-select/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/multi-select/src/test.ts",
+            "tsConfig": "projects/multi-select/tsconfig.spec.json",
+            "karmaConfig": "projects/multi-select/karma.conf.js"
           }
         }
       }

@@ -5,7 +5,10 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   //lazy loading (kima fb ychargili kn eli hachti bih)
-  {path:'candidature',  loadChildren:() =>import('./candidature/candidature.module').then(m=>m.CandidatureModule)
+  //{path:'candidature',  loadChildren:() =>import('./candidature/candidature.module').then(m=>m.CandidatureModule)},
+{path:'entretien',  loadChildren:() =>import('./entretien/entretien.module').then(m=>m.EntretienModule)
+},
+{path:'candidature',  loadChildren:() =>import('./candidature/candidature.module').then(m=>m.CandidatureModule)
 }
 ];
 

@@ -10,13 +10,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CandidatureModule } from './candidature/candidature.module';
+import { EntretienModule } from './entretien/entretien.module';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelect } from '@angular/material/select';
+import {  MatOptionModule } from '@angular/material/core'; 
+import { MatIcon } from '@angular/material/icon';
+import {  MatLabel } from '@angular/material/form-field';
+import { MatTable } from '@angular/material/table';
+/*FullCalendarModule.registerPlugins([
+  dayGridPlugin,
+  interactionPlugin
+]);*/
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -24,7 +40,10 @@ import { CandidatureModule } from './candidature/candidature.module';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    CandidatureModule
+    CandidatureModule,
+    EntretienModule,
+    
+    
     
   ],
   providers: [],

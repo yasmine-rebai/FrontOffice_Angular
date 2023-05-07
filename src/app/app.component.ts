@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { CalendarOptions } from 'fullcalendar';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Connect4Aid';
+  posts =[];
+  calendarOptions!: CalendarOptions;
+  constructor (private http: HttpClient){};
+
+  handleDateClick(arg:any){
+    alert('date click!'+ arg.dateStr);
+  }
 }

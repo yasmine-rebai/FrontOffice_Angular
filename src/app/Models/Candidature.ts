@@ -1,3 +1,5 @@
+import { Entretien } from "./entretien";
+
 export class Candidature {
     idCondidate!: number;
     EnumType!:string;
@@ -7,4 +9,5 @@ export class Candidature {
     email!:string;
     mobile!:string;
     cv!:string;
+    idEntretien!:Entretien;
 }
